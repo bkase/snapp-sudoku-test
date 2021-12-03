@@ -6,6 +6,7 @@
   "license": "Apache-2.0",
   "keywords": [],
   "main": "build/index.js",
+  "type": "module",
   "scripts": {
     "test": "jest",
     "testw": "jest --watch",
@@ -27,5 +28,8 @@
     "**/*": [
       "prettier --write --ignore-unknown"
     ]
+  },
+  "dependencies": {
+    "@o1labs/snarkyjs": "^0.1.9"
   }
 }
