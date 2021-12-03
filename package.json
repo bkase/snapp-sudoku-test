@@ -11,7 +11,7 @@
     "test": "jest",
     "testw": "jest --watch",
     "coverage": "jest --coverage",
-    "build": "tsc -p tsconfig.json",
+    "build": "tsc -p tsconfig.json && esbuild --bundle build/index.js --target=esnext --format=esm --outfile=public/bundle.js",
     "prepare": "husky install",
     "format": "prettier --write --ignore-unknown **/*"
   },
